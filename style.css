@@ -1,0 +1,477 @@
+/* ---------------------------------
+   RESET E ESTILOS GERAIS
+----------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------
+   CABEÇALHO
+----------------------------------*/
+.header {
+  background-color: #9cccfc;
+  padding: 40px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #181818;
+}
+
+.logo span {
+  color: #09286D;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 1.2rem;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+/* ---------------------------------
+   HERO SECTION
+----------------------------------*/
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  flex-wrap: wrap;
+  margin-left: 7.5%;
+
+}
+
+.hero-text {
+  flex: 1 1 45%;
+}
+
+.hero-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #09286D;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: 5%;
+  font-size: 1.3rem;
+}
+
+.btn:hover {
+  background-color: #79A7FC;
+  color: #111;
+}
+
+#carouselExampleControls{
+ margin-right: 7%;
+
+ flex: 1 1 45%;
+}
+
+/* ---------------------------------
+   PRINCIPAIS
+----------------------------------*/
+
+.principais{
+  background-color: #6492f7;
+  padding: 260px 0;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.principais h2 {
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  
+}
+
+.principais p {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 5%;
+}
+.card-body{
+  background-color: #395daa;
+  color: rgb(255, 249, 241);
+}
+
+.card-title{
+  color: rgb(164, 249, 255);
+  font-weight: bold;
+}
+/* ---------------------------------
+   PROBLEMAS
+----------------------------------*/
+.problemas {
+  padding: 200px 0;
+  text-align: center;
+}
+
+.problemas h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.problemas p {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+
+.problemas .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding-bottom: -30%;
+}
+
+.problemas .card {
+  background-color: #395daa;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 68, 255, 0.05);
+  padding: 20px;
+  padding-bottom: -30%;
+  transition: 0.3s;
+}
+
+.problemas .card:hover {
+  transform: translateY(-5px);
+}
+
+.problemas .card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.problemas .card p {
+  font-size: 1.2rem;
+}
+
+.img-problemas{
+  height: 60%;
+  width: 40%;
+}
+
+/* ---------------------------------
+   COMO COMBATER
+----------------------------------*/
+.combater {
+  background-color: #395daa;
+  padding: 260px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.combater .text {
+  flex: 1 1 45%;
+  margin-left: 10%;
+}
+
+.combater .text h2 {
+  color: rgb(162, 255, 255);
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 10%;
+  text-align: center;
+  
+}
+
+.combater .text p {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.combater .text ul {
+  color: #09286D;
+  list-style: disc;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+.combater .text li {
+  margin-bottom: 20px;
+  list-style-type: none;
+  
+}
+
+.combater .image {
+  flex: 1 1 45%;
+  height: 45%;
+  width: 45%;
+  margin-left: -20%;
+  box-sizing: border-box;
+  display: inline-block
+}
+
+.combater .card-p {
+  background-color:#ffffff;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 68, 255, 0.05);
+  border-radius: 10px 10px 0 0;
+  padding: 20px;  
+  transition: 0.3s;
+  display: flow-root;
+}
+
+.combater .card-dicas {
+  background-color:#9cccfc;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 10px rgba(0, 68, 255, 0.05);
+  padding: 20px;  
+  transition: 0.3s;
+}
+
+/* ---------------------------------
+   SOBRE
+----------------------------------*/
+.sobre {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.sobre h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-bottom: 5%;
+}
+
+.sobre p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+/* ---------------------------------
+   RODAPÉ
+----------------------------------*/
+.footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 0.9rem;
+}
+
+/* ---------------------------------
+   TABLET (ATÉ 1024px)
+----------------------------------*/
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  .header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu ul {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 0;
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    margin: 0 auto 30px auto;
+  }
+
+  .problemas .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .img-problemas{
+  height: 40%;
+  width: 100%;
+}
+
+  .combater {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 80px 0;
+  }
+
+  .combater .text ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .combater .text li {
+    margin: 8px 0;
+  }
+
+  .sobre p {
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+
+/* ---------------------------------
+   MOBILE (ATÉ 700px)
+----------------------------------*/
+@media (max-width: 700px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 0;
+    gap: 30px;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .btn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+
+  .problemas {
+    padding: 80px 0;
+  }
+
+  .problemas h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .problemas .grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .img-problemas{
+  height: 60%;
+  width: 100%;
+}
+
+  .combater {
+    padding: 80px 0;
+    gap: 30px;
+  }
+
+  .combater .text h2 {
+    font-size: 2rem;
+  }
+
+  .combater .text p {
+    font-size: 1rem;
+  }
+
+  .sobre {
+    padding: 80px 0;
+  }
+
+  .sobre h2 {
+    font-size: 2rem;
+  }
+
+  .footer {
+    padding: 25px 0;
+    font-size: 0.85rem;
+  }
+}
